@@ -1,3 +1,4 @@
+/* Responsive website css style start */
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -87,6 +88,43 @@ body{
     color: #6C6C6C;
 }
 /* player lists style ends */
+
+/* news section start */
+
+.news-container{
+    background-color: #F3F1FF;
+}
+.news-container h1{
+            font-size: 50px;
+            color: #2D25A0;
+            text-align: center;
+            padding-top: 30px;
+}
+.newses{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    margin: 20px;
+}
+.news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 30px grey;
+    background-color: #FFFFFF;
+    padding: 40px 30px;
+}
+.news-title p{
+    color: tomato;
+}
+.news-banner img{
+    height: 120px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+/* news section ends */
+
 /* sponser section start */
 .sponser{
     display:flex;
@@ -152,19 +190,25 @@ footer{
 .footer-logo{
    width:483.87px;
    height: 110px;
-
 }
-.footer-icons{
+.footer-item{
    display: flex;
    flex-direction: row;
    justify-content: center;
 }
-.footer-icons img{
-    height: 34px;
-    width: 34px;
+.footer-icon{
+    background-color: lightgray;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
     margin-left: 7px;
     margin-right: 7px;
-}
+ }
+ .icon-position{
+     position: relative;
+     left: 8px;
+     top: 4px;
+ }
 footer p{
   font-weight: 400;
   font-size: 18px;
@@ -209,6 +253,31 @@ footer p{
     .players{
         grid-template-columns: repeat(1, 1fr);
      }
+     .news-container{
+        width: 100%;
+    }
+    .newses{
+       grid-template-columns: repeat(1, 1fr);
+    }
+    .news{
+        padding: 20px 10px;
+    }
+    .sponser{
+        width: 100%;
+    }
+    .tlc-button{
+        font-size: 15px;
+
+    }
+    .kwai-button{
+        font-size: 15px;
+    }
+    .betsson-button{
+        font-size: 15px;
+    }
+    .sinovac-title{
+        font-size: 15px;
+    }
     .footer{
         width: 100%;
     }
@@ -217,3 +286,5 @@ footer p{
        height: 80px; 
     }
 }
+
+/* Responsive website css style end */
